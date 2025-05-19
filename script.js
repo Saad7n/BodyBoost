@@ -86,7 +86,3 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = 'payment.html';
     });
 	
-	function handlePayment(event) {
-  event.preventDefault();
-  window.location.href = "thankyou.html"; 
-}

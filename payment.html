@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Payment - Body Boost</title>
   <link rel="stylesheet" href="form.css">
- <style>
- body {
+  <style>
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: url('background.png') no-repeat center center fixed;
@@ -85,8 +85,7 @@
     footer {
       margin-top: 2rem;
     }
- </style>
- 
+  </style>
 </head>
 <body>
   <header>
@@ -95,7 +94,7 @@
       <ul class="nav-links">
         <li><a href="about.html">About Us</a></li>
         <li><a href="membership.html">Membership</a></li>
-        <li><a href="macro.html">Macro Calculator</a></li>
+        <li><a href="Macro.html">Macro Calculator</a></li>
       </ul>
     </nav>
   </header>
@@ -111,7 +110,7 @@
 
     <div class="payment-form">
       <h2>Payment Information</h2>
-      <form onsubmit="handlePayment(event)">
+      <form>
         <label for="card-name">Cardholder Name:</label>
         <input type="text" id="card-name" name="card-name" required>
 
@@ -120,7 +119,7 @@
 
         <label for="exp-date">Expiration Date:</label>
         <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
-
+        
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" name="cvv" required pattern="\d{3}" maxlength="3" placeholder="3-digit CVV">
 
@@ -128,10 +127,6 @@
       </form>
     </div>
   </main>
-
-  <footer>
-    <p>© 2025 Body Boost</p>
-  </footer>
   <script>
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -152,12 +147,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-    function handlePayment(event) {
-      event.preventDefault();
-      window.location.href = "thankyou.html"; 
-    }
-	
 </script>
+
+<footer>
+    <p>© 2025 Body Boost</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

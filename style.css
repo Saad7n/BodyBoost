@@ -1,4 +1,4 @@
-
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -178,10 +178,10 @@ footer {
 }
 
   .hours {
-    font-size: 2em; 
+    font-size: 1.5em; 
   }
 
   .hours h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   
